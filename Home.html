@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Title</title>
     <link rel="stylesheet" href="Home.css" />
     <link rel="stylesheet" href="https://use.typekit.net/hew4csh.css" />
   </head>
+  <script src="./Home.js" defer></script>
   <body>
-    <div class="firstImg">
-      <img class="AUImg" src="./imgs/MainPlate.png" />
-      <div class="HomeContact">
+    <nav>
+   
+        <a>HOME</a>
+        <a>ABOUT US</a>
+        <a>SERVICE</a>
+        <a>OFFER</a>
+ 
+      <img src="./imgs//Logo.png"/>
+     
+      <a>GALLERY</a>
+      <a>CONTACT</a>
+      <a>BLOG</a>
+    </nav>
+    <div class="firstImg ">
+      <img class="AUImg lazyLoadHome" src="./imgs/MainPlate.png" />
+      <div class="HomeContact lazyLoadHome">
         <h1
           style="
             color: white;
@@ -28,7 +47,7 @@
     </div>
     <div
      
-      class="AboutUs"
+      class="AboutUs lazyLoadHome"
     >
       <img class="AUImg" src="./imgs/aboutImg.png" />
       <div class="AU">
@@ -45,9 +64,9 @@
       </div>
     </div>
     <div style="display: flex; justify-content: center; flex-direction: column;">
-      <img style="width: 100%; z-index: 0" src="./imgs/Shape.png" />
+      <img style="width: 100%; z-index: -10" src="./imgs/Shape.png" />
       <div
-        class="Quality"
+        class="Quality lazyLoadHome"
       >
         <h2 style="letter-spacing: 2px">Our Food Quality</h2>
         <p style=" letter-spacing: 1px; font-weight: 800">
@@ -61,7 +80,7 @@
         </p>
       </div>
     </div>
-    <div style="display: flex; justify-content: center; margin: 5%">
+    <div style="display: flex; justify-content: center; margin: 5%; z-index: 20;">
       <h2 style="letter-spacing: 2px; color: white">Our Food Gallery</h2>
     </div>
 
@@ -82,17 +101,17 @@
           align-items: center;
         "
       >
-        <img src="./imgs/1.png" />
-        <img src="./imgs/2.png" />
-        <img src="./imgs/3.png" />
-        <img src="./imgs/4.png" />
-        <img src="./imgs/5.png" />
-        <img src="./imgs/6.png" />
+        <img class="lazyLoadHome" src="./imgs/1.png" />
+        <img class="lazyLoadHome" src="./imgs/2.png" />
+        <img class="lazyLoadHome" src="./imgs/3.png" />
+        <img class="lazyLoadHome" src="./imgs/4.png" />
+        <img class="lazyLoadHome" src="./imgs/5.png" />
+        <img class="lazyLoadHome" src="./imgs/6.png" />
       </div>
     </div>
     <div class="secoundImg">
       <div
-        class="enjoy"
+        class="enjoy lazyLoadHome"
       >
         <h2 style="letter-spacing: 2px">Enjoy Our Food</h2>
         <p style=" letter-spacing: 1px; font-weight: 800">
@@ -128,7 +147,7 @@
           align-items: center;
         "
       >
-        <div style="display: flex; flex-flow: column; width: 400px; margin: 1%">
+        <div class="lazyLoadHome" style="display: flex; flex-flow: column; width: 400px; margin: 1%">
           <img src="./imgs/menu1.png" />
           <h3 style="font-size: 25px">Italian Source Mushroom</h3>
           <p
@@ -153,7 +172,7 @@
             Price: $12.00
           </p>
         </div>
-        <div style="display: flex; flex-flow: column; width: 400px; margin: 1%">
+        <div class="lazyLoadHome" style="display: flex; flex-flow: column; width: 400px; margin: 1%">
           <img src="./imgs/menu2.png" />
           <h3 style="font-size: 25px">Italian Source Mushroom</h3>
           <p
@@ -179,7 +198,7 @@
             Price: $12.00
           </p>
         </div>
-        <div style="display: flex; flex-flow: column; width: 400px; margin: 1%">
+        <div class="lazyLoadHome" style="display: flex; flex-flow: column; width: 400px; margin: 1%">
           <img src="./imgs/menu3.png" />
           <h3 style="font-size: 25px">Italian Source Mushroom</h3>
           <p
@@ -207,7 +226,7 @@
       </div>
     </div>
     <div
-      class="yellow"
+      class="yellow lazyLoadHome"
     >
       <img src="./imgs/lastPlate.png" />
       <div
@@ -223,6 +242,19 @@
         </p>
       </div>
     </div>
+    <div class="Logo lazyLoadHome">
+      <img src="./imgs/Logo.png"/>
+      <div class="BottomNav">
+        <a>HOME</a>
+        <a>ABOUT US</a>
+        <a>SERVICES</a>
+        <a>FOODS</a>
+        <a>CONTACTS</a>
+        <a>LOCATION</a>
+      </div>
+    </div>
+    <div class="lazyLoadHome" style="display: flex; justify-content: center; align-items: center;">
+      <img style="margin-bottom: 60px;" src="./imgs//insta.png"></div>
     <div class="Body"></div>
   </body>
 </html>

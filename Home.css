@@ -6,8 +6,66 @@ body{
     padding: 0;
     margin: 0;
 }
+nav img {
+    width: 180px;
+}
+nav a {
+    color: white;
+}
+.lazyLoadHome {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 0.4s ease-out;
+}
+
+.HomeFade {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 0.4s ease-out;
+}
+
+nav{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #1d1d23;
+    z-index: 1;
+}
+.left{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+.Logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Logo img{
+    margin: 50px 0 40px 0;
+}
 p{
     font-size: 18px;
+}
+.BottomNav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 0 30px 0;
+}
+.BottomNav a {
+    color: white;
+    font-weight: 800;
+    margin: 0 15px 0 15px;
+    letter-spacing: 1px;
+    cursor: pointer;
 }
 .HomeContact{
     width: 30%;
@@ -82,11 +140,11 @@ h1{
 }
 .Meal{
 
-    text-align: center;
+
     width: 35%;
     color: white;
     display: flex;
-    justify-content: center;
+
     flex-direction: column;
     padding: 5%;
   
@@ -105,16 +163,38 @@ h1{
 }
 .Gallery img {
     margin: 2%;
+
 }
 .Gallery h3{
     color: #e58f00;
 }
-@media(max-width: 1170px){
+@media(max-width: 1430px){
     .Quality{
         top: 240%;
     }
 }
-@media(max-width: 1120px){
+@media(max-width: 500px){
+    h1{
+        font-size: 36px !important;
+    }
+    .Gallery img {
+        width: 350px;
+        margin: 2% 0 2% 3%;
+    }
+    .BottomNav a {
+        margin-top: 15px;
+    }
+    .Logo img {
+        width: 210px;
+    }
+    .firstImg{
+        margin-top: 40px;
+    }
+    .AUImg{
+        margin-top: 20px;
+    }
+}
+@media(max-width: 1320px){
     .Quality{
         top: 200%;
     }
@@ -127,18 +207,6 @@ h1{
 
 
 @media(max-width: 1000px){
-   
-    .enjoy{
-       width: 70%;
-    }
-}
-@media(max-width: 800px){
-    .AUImg{
-        width: 80%;
-    }
-    .AU{
-        width: 80%;
-    }
     .Quality{
         background-color: rgba(14, 8, 43, 0.692);
         top: 0;
@@ -150,6 +218,21 @@ h1{
         margin-top: -70%;
         position: relative;
     }
+    .enjoy{
+       width: 70%;
+    }
+}
+@media(max-width: 800px){
+    .AUImg{
+        width: 80%;
+    }
+    .AU{
+        width: 80%;
+    }
+    nav a {
+        display: none;
+    }
+    
     .yellow{
         width: auto;
         flex-direction: column;
